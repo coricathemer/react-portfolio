@@ -3,6 +3,19 @@ import React from "react";
 const Contact = () => (
   <div>
     <h1>Contact Page</h1>
+    <br></br>
+    <form>
+      <label>
+       Name:
+         <input type="text" name="name" />
+      </label>
+      <label>
+        Email:
+        <input type="text" email="email" />
+      </label>
+        <input type="submit" value="Submit" />
+    </form>
+    <br></br>
     <p>
       Integer cursus bibendum sem non pretium. Vestibulum in aliquet sem, quis molestie urna.
       Aliquam semper ultrices varius. Aliquam faucibus sit amet magna a ultrices. Aenean
