@@ -1,46 +1,31 @@
 import React from "react";
-import { capitalizeFirstLetter } from "../../utils/helpers";
 
-function Nav() {
-  const  categories = [
-    { name: 'resume', description: 'Photos of grocery stores, food trucks, and other commercial projects' },
-    { name: 'Projects', description: 'Portraits of people in my life' }
-  ];
 
-  const handleClick = () => {
-    console.log("click handled")
-  }
+function Nav(props) {
+  const  tabs = ['Home', 'About', 'Projects', 'Contact' ];
 
   return (
     <header data-testid="header" className="flex-row px-1">
       <h2>
-        <a href="/">
-          <span role="img" aria-label="computer"> 👩🏻‍💻</span> Cori Cathemer
-        </a>
+      <span role="img" aria-label="computer"> 👩🏻‍💻</span> Cori Cathemer
       </h2>
-      <nav>
-        <ul className="flex-row">
-          <li className="mx-2">
-            <a href="#about" onClick={() => handleClick()}>
-              About me
-            </a>
-          </li>
-          <li className={"mx-2"}>
-            <span onClick={() => handleClick()}>
-              Contact
-            </span>
-          </li>
-          {
-            categories.map((category) => (
-              <li className="mx-1" key={category.name} >
-                <span onClick={() => { handleClick(); }}>
-                 {capitalizeFirstLetter(category.name)}
-                </span>
-              </li>
-            ))
-          }
-        </ul>
-      </nav>
+      <ul className="flex-row">
+      {tabs.map(tab => (
+        <li className={"mx-2"} key={tab}>
+          <a
+            href={'#' + tab.toLowerCase()}
+            // Whenever a tab is clicked on,
+            // the current page is set through the handlePageChange props.
+            onClick={() => props.handlePageChange(tab)}
+            className={
+              props.currentPage === tab ? 'nav-link active' : 'nav-link'
+            }
+          >
+            {tab}
+          </a>
+        </li>
+      ))}
+    </ul>
     </header>
   );
 }
