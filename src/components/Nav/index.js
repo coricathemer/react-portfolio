@@ -7,7 +7,7 @@ function Nav(props) {
   return (
     <header data-testid="header" className="flex-row px-1">
       <h2>
-      <span role="img" aria-label="computer"> 👩🏻‍💻</span> Cori Cathemer
+      <span role="img" aria-label="computer"> 👩🏻‍💻</span> <a href="/">Cori Cathemer</a>
       </h2>
       <ul className="flex-row">
       {tabs.map(tab => (
