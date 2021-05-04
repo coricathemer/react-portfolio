@@ -1,13 +1,10 @@
 import React from "react";
-import coverImage from "../../assets/cover/cover-image.jpg"
 
-const Home = () => (
+
+const Resume = () => (
   <div>
-    <h1>Home Page</h1>
-    <section className="my-5">
-      <h1 id="about">Full Stack Developer</h1>
-      <img src={coverImage} className="my-2" style={{ width: "100%" }} alt="cover" />
-    </section>
+    <h1>Resume</h1>
+
     <p>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque velit, lobortis ut magna
       varius, blandit rhoncus sem. Morbi lacinia nisi ac dui fermentum, sed luctus urna tincidunt.
@@ -21,4 +18,4 @@ const Home = () => (
   </div>
 );
 
-export default Home;
+export default Resume;

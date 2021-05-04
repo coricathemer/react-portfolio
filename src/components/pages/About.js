@@ -1,9 +1,12 @@
 import React from "react";
-
+import coverImage from "../../assets/cover/cover-image.jpg"
 
 const About = () => (
   <div>
-    <h1>About Page</h1>
+    <h1>About Cori</h1>
+    <section className="my-5">
+      <img src={coverImage} className="my-2" style={{ width: "100%" }} alt="cover" />
+    </section>
     <p>
       Hi! Welcome to the about me section of my portfolio!
     </p>
