@@ -99,6 +99,13 @@ header a {
   color: var(--light);
 }
 
+.horizontal-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none; 
+  justify-content:space-evenly;
+}
+
 button {
   font-size: 1rem;
   text-decoration: none;

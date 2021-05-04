@@ -24,6 +24,12 @@
   color: white;
 }
 
+.App-footer {
+  width: 100%;
+  text-align: center;
+  position: fixed;
+}
+
 .App-link {
   color: #61dafb;
 }
@@ -36,3 +42,4 @@
     transform: rotate(360deg);
   }
 }
+

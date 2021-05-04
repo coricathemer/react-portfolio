@@ -4,7 +4,7 @@ function Footer() {
   return (
     <article className="flexbox-container footer">
       <div> 
-        <ul className="horizontal-list">
+        <ul className="horizontal-list" style={{backgroundColor: "sienna"}}>
           <li><a href="https://github.com/coricathemer">GitHub</a></li>
           <li><a href="https://www.linkedin.com/in/cori-cathemer-77218a192/">Linkedin</a></li>
           <li><a href="https://twitter.com/coding_libra">Twitter</a></li>

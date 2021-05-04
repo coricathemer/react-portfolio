@@ -5,6 +5,7 @@ import About from './pages/About';
 import Projects from './pages/Projects';
 import Contact from './pages/Contact';
 import Footer from './pages/Footer';
+import '../App.css';
 
 function Portfolio() {
   // Using useState, set the default value for currentPage to 'Home'
