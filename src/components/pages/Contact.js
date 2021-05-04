@@ -39,6 +39,9 @@ function ContactForm() {
   return (
     <section>
       <h1 data-testid="h1tag">Contact me</h1>
+      <p>
+      Wow! I am so excited to you made it to this page. I love connecting with new people. Fill out the form below, and I will be in touch real soon!
+    </p>
       <form id="contact-form" onSubmit={handleSubmit}>
         <div>
           <label htmlFor="name">Name:</label>

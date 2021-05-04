@@ -4,6 +4,7 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Projects from './pages/Projects';
 import Contact from './pages/Contact';
+import Footer from './pages/Footer';
 
 function Portfolio() {
   // Using useState, set the default value for currentPage to 'Home'
@@ -29,6 +30,7 @@ function Portfolio() {
       <Nav currentPage={currentPage} handlePageChange={handlePageChange} />
       {/* Call the renderPage function passing in the currentPage */}
       <div>{renderPage(currentPage)}</div>
+      <div><Footer /></div>
     </div>
   );
 }
