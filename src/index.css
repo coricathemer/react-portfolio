@@ -10,7 +10,7 @@ main {
   --tertiary: #558b6e;
   --light: #ce796b;
   --dark: #fffffc;
-  --darker: #fff8f0;
+  --darker: #fffffc;
   --error: rgb(228, 46, 1);
   --spacing-one: calc(1rem * 0.5);
   --spacing-two: calc(1rem);
